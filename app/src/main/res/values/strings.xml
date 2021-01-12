@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="enter_a_value">Click me!</string>
+    <string name="click_me">Click Me!</string>
+    <string-array name="lengthUnits">
+        <item>km</item>
+        <item>hm</item>
+        <item>dam</item>
+        <item>m</item>
+        <item>dm</item>
+        <item>cm</item>
+        <item>mm</item>
+    </string-array>
+
+    <string-array name="temperatureUnits">
+        <item>F</item>
+        <item>C</item>
+        <item>K</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/TempButtonLayout"
+        android:background="@drawable/red_background"
+        android:clickable="true">
+
+
+        <TextView
+            android:id="@+id/TempButtonTextBox"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="40dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold|italic"/>
+
+
+        <ImageView
+            android:src="@drawable/temp_icon"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/blue_background"
+        android:id="@+id/LengthButtonLayout"
+        android:clickable="true">
+
+
+        <TextView
+            android:id="@+id/LengthButtonTextBox"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="40dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold|italic"/>
+
+        <ImageView
+            android:paddingVertical="10dp"
+            android:src="@drawable/length_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/WeightButtonLayout"
+        android:background="@drawable/green_background"
+        android:clickable="true">
+
+
+        <TextView
+            android:id="@+id/WeightButtonTextBox"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="40dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold|italic"/>
+
+        <ImageView
+            android:src="@drawable/weight_icon"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lengthConvertor">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:background="#f0f0f0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <!--    A Centered "Converting Weight Units", with 15% margins on each side.  -->
+        <LinearLayout
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:paddingBottom="40dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15">
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="50sp"
+                android:layout_weight="0.7"
+                android:background="@drawable/green_background"
+                android:gravity="center"
+                android:text="Converting Weight Units"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold|italic"
+                android:textSize="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <!--    A centered "Value to Convert:", with 30 percent margins on each side-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:paddingBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30">
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:text="Value to Convert:"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.30">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+        <!-- A Centered User Input, with 15 percent margins on each side.
+         Added black border on the edge of the box.-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15">
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="0sp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:background="@drawable/edit_text_border"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="@string/click_me"
+                android:textSize="25dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+        <!--        Selecting the Units, putting it right under user input, with 15 percent margins on each side.  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15">
+            </RelativeLayout>
+
+
+            <Spinner
+                android:id="@+id/fromSpinner"
+                android:layout_width="0sp"
+                android:layout_height="50dp"
+                android:layout_weight="0.7" />
+
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="To"
+            android:textSize="25sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15">
+            </RelativeLayout>
+
+            <Spinner
+                android:id="@+id/toSpinner"
+                android:layout_width="0sp"
+                android:layout_height="50dp"
+                android:layout_weight="0.7" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20">
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/convert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Convert" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.60">
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/clear_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Clear" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20">
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Converted Output..."
+            android:textSize="20dp" />
+
+
+        <!--        This takes the rest of the available space and puts a Back button bottom left. -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/HomeScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:text=" Home " />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
