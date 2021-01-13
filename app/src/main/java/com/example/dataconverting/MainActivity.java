@@ -1,5 +1,6 @@
 package com.example.dataconverting;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -27,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Setting text of 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Data Converter");
 
         /* The following are buttons that if the text is clicked, the corresponding conversion page opens */
 
@@ -100,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
     /* Starts a new activity page and displays it. (Temperature) */
     public void openTempPage() {
-        Intent intent = new Intent(this, temperatureConvertor.class);
+        Intent intent = new Intent(this, TemperatureActivity.class);
         startActivity(intent);
 
     }
@@ -109,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
 
     /* Starts a new activity page and displays it. (length) */
     public void openLengthPage() {
-        Intent intent = new Intent(this, lengthConvertor.class);
+        Intent intent = new Intent(this, LengthActivity.class);
         startActivity(intent);
 
     }
@@ -118,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
     /* Starts a new activity page and displays it. (Weight) */
     public void openWeightPage() {
-        Intent intent = new Intent(this, weightConvertor.class);
+        Intent intent = new Intent(this, WeightActivity.class);
         startActivity(intent);
 
     }
