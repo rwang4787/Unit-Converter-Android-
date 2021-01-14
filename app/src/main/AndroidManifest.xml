@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DataConverting">
-        <activity android:name=".weightConvertor"></activity>
-        <activity android:name=".temperatureConvertor" />
-        <activity android:name=".lengthConvertor" />
+        <activity android:name=".WeightActivity"></activity>
+        <activity android:name=".TemperatureActivity" />
+        <activity android:name=".LengthActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
