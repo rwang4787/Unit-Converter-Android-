@@ -17,5 +17,13 @@
         <item>C</item>
         <item>K</item>
     </string-array>
+    
+    <string-array name="weightUnits">
+        <item>kg</item>
+        <item>g</item>
+        <item>mg</item>
+        <item>oz</item>
+        <item>lb</item>
+    </string-array>
 </resources>
 
