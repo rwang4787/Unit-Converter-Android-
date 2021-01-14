@@ -1,4 +1,4 @@
-package com.example.testapp;
+package com.example.dataconverting;
 
 public interface UnitConverter {
     void convert();
